@@ -1,0 +1,26 @@
+/* 글자 우측 커서 효과 삽입 */
+#typing-text {
+  display: table-cell;
+  vertical-align: middle;
+  border-right: 0.05em solid #161616;
+  animation: cursor 0.5s ease infinite;
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+#typing-area {
+  height: 82vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#typing-text {
+  /*font-family: 'Gemunu Libre', sans-serif;*/
+  font-family: 'Rajdhani', sans-serif;
+  color: #222;
+  font-size: 6rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
